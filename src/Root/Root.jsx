@@ -1,14 +1,14 @@
+import Intro from "../Componands/Intro/Intro";
 import Navbar from "../Navbar/Navbar";
-import Home from "../Pages/Home/Home";
-
+ 
  
   
  const Root = () => {
     return ( 
-        <div className=" font-OpenSans">
+        <div className="font-OpenSans">
 
-           <Navbar></Navbar>
-          <Home></Home>
+            <Navbar></Navbar>
+              <Intro></Intro>
         </div>
     );
  };
