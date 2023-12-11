@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from 'react-scroll';
 
 
 
@@ -22,22 +23,39 @@ const Navbar = () => {
 
 
     const links = <div className="lg:mr-6 lg:flex lg:items-center lg:gap-10">
-
-        <li className="cursor-pointer group block  rounded-md  text-white text-xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
+         <Link spy={true} to='Navbar' smooth={true} activeClass="activeClass">
+         
+         <li className="cursor-pointer group block  rounded-md  text-white text-xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
             <span className="group-hover:[text-shadow:3px_3px_6px_var(--tw-shadow-color)] shadow-orange-500 hover:text-orange-500">Home</span>
         </li>
-        <li className="cursor-pointer group block  rounded-md  text-white text-xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
+         </Link>
+
+         <Link spy={true} to='About' smooth={true}>
+         <li className="cursor-pointer group block  rounded-md  text-white text-xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
             <span className="group-hover:[text-shadow:3px_3px_6px_var(--tw-shadow-color)] shadow-orange-500 hover:text-orange-500">About</span>
         </li>
-        <li className="cursor-pointer group block  rounded-md  text-white text-xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
-            <span className="group-hover:[text-shadow:3px_3px_6px_var(--tw-shadow-color)] shadow-orange-500 hover:text-orange-500">Education</span>
-        </li>
-        <li className="cursor-pointer group block  rounded-md  text-white text-xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
+         </Link>
+        
+         
+         <Link spy={true} to='Skills' smooth={true}>
+         
+         <li className="cursor-pointer group block  rounded-md  text-white text-xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
             <span className="group-hover:[text-shadow:3px_3px_6px_var(--tw-shadow-color)] shadow-orange-500 hover:text-orange-500">Skills</span>
         </li>
-        <li className="cursor-pointer group block  rounded-md  text-white text-xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
+         </Link>
+
+         <Link spy={true} to='Education' smooth={true}>
+         <li className="cursor-pointer group block  rounded-md  text-white text-xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
+            <span className="group-hover:[text-shadow:3px_3px_6px_var(--tw-shadow-color)] shadow-orange-500 hover:text-orange-500">Education</span>
+        </li>
+         </Link>
+         
+         <Link spy={true} to='Contact' smooth={true}>
+         <li className="cursor-pointer group block  rounded-md  text-white text-xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
             <span className="group-hover:[text-shadow:3px_3px_6px_var(--tw-shadow-color)] shadow-orange-500 hover:text-orange-500">Contact</span>
         </li>
+         </Link>
+         
 
 
 

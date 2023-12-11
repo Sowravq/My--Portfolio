@@ -5,6 +5,7 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 import {useTypewriter,Cursor } from 'react-simple-typewriter'
  
 const Intro = () => {
+    const pdf = '../../../public/pdf/assignment12_category_0007.pdf'
        const [text] = useTypewriter({
         words:['Frontend Developer'],
         loop:{},
@@ -12,7 +13,7 @@ const Intro = () => {
         delaySpeed:40
        });
     return (
-        <div className="max-w-6xl mx-auto mt-20 flex flex-col-reverse lg:flex-row items-center">
+        <div className="max-w-6xl mx-auto mt-20 flex flex-col-reverse lg:flex-row items-center" id='Navbar'>
             <div className="flex-1 text-center  ">
                 <p className="text-4xl font-bold">Hy! It's Me</p>
                 <h2 className="text-5xl font-bold mt-3 text-orange-500">Sowrav Kumar</h2>
@@ -27,22 +28,30 @@ const Intro = () => {
                 <p className="mt-5 text-sm font-light">Frontend developer with medium level of experience of web design.</p>
                 <div className=" flex items-center gap-3 mt-5 text-orange-600 justify-center ">
 
+                    <a href="https://github.com/Sowravq">
                     <p className="cursor-pointer group block  rounded-md  text-orange-600 text-3xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
                         <span className="group-hover:[text-shadow:3px_3px_6px_var(--tw-shadow-color)] shadow-orange-500 hover:text-orange-500"><VscGithub></VscGithub></span>
                     </p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sowrav-kumar-95b5b32a0/">
                     <p className="cursor-pointer group block  rounded-md  text-orange-600 text-4xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
                         <span className="group-hover:[text-shadow:3px_3px_6px_var(--tw-shadow-color)] shadow-orange-500 hover:text-orange-500"><TiSocialLinkedinCircular></TiSocialLinkedinCircular></span>
                     </p>
+                    </a>
+                    <a href="https://www.facebook.com/sowrav.kumar.397">
                     <p className="cursor-pointer group block  rounded-md  text-orange-600 text-4xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
                         <span className="group-hover:[text-shadow:3px_3px_6px_var(--tw-shadow-color)] shadow-orange-500 hover:text-orange-500"><CiFacebook></CiFacebook></span>
                     </p>
+                    </a>
 
                 </div>
                  <div className="mt-4">
-                 <button className="btn bg-orange-600 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full shadow-2xl hover:text-white shadow-orange-600 transform transition-all duration-500 ease-in-out hover:scale-110 hover:brightness-110  animate-pulse active:animate-bounce">
+                <a href={pdf} download>
+                <button className="btn bg-orange-600 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full shadow-2xl hover:text-white shadow-orange-600 transform transition-all duration-500 ease-in-out hover:scale-110 hover:brightness-110  animate-pulse active:animate-bounce">
                     <FaCloudDownloadAlt></FaCloudDownloadAlt> 
-                    Download CV
+                    Download Resume
                  </button>
+                </a>
 
                  </div>
                  
