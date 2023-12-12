@@ -6,16 +6,16 @@ const Footer = () => {
     return (
         <div>
             <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
-                <nav className="grid grid-flow-col gap-4"> 
+                <nav className="grid   grid-cols-3 md:grid-cols-6 lg:grid-cols-6 gap-4"> 
 
                 <Link spy={true} to='Navbar' smooth={true} activeClass="activeClass">
          
-         <li className="cursor-pointer group block  rounded-md  text-black text-xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
+         <li className="cursor-pointer group block  rounded-md   text-xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
             <span className="group-hover:[text-shadow:3px_3px_6px_var(--tw-shadow-color)] shadow-orange-500 hover:text-orange-500">Home</span>
         </li>
          </Link>
          <Link spy={true} to='About' smooth={true}>
-         <li className="cursor-pointer group block  rounded-md   text-black text-xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
+         <li className="cursor-pointer group block  rounded-md   text-xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
             <span className="group-hover:[text-shadow:3px_3px_6px_var(--tw-shadow-color)] shadow-orange-500 hover:text-orange-500">About</span>
         </li>
          </Link>
@@ -23,19 +23,24 @@ const Footer = () => {
          
          <Link spy={true} to='Skills' smooth={true}>
          
-         <li className="cursor-pointer group block  rounded-md   text-black text-xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
+         <li className="cursor-pointer group block  rounded-md  text-xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
             <span className="group-hover:[text-shadow:3px_3px_6px_var(--tw-shadow-color)] shadow-orange-500 hover:text-orange-500">Skills</span>
         </li>
          </Link>
 
          <Link spy={true} to='Education' smooth={true}>
-         <li className="cursor-pointer group block  rounded-md   text-black text-xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
+         <li className="cursor-pointer group block  rounded-md text-xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
             <span className="group-hover:[text-shadow:3px_3px_6px_var(--tw-shadow-color)] shadow-orange-500 hover:text-orange-500">Education</span>
+        </li>
+         </Link>
+         <Link spy={true} to='Projects' smooth={true}>
+         <li className="cursor-pointer group block  rounded-md text-xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
+            <span className="group-hover:[text-shadow:3px_3px_6px_var(--tw-shadow-color)] shadow-orange-500 hover:text-orange-500">Projects</span>
         </li>
          </Link>
          
          <Link spy={true} to='Contact' smooth={true}>
-         <li className="cursor-pointer group block  rounded-md  text-black text-xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
+         <li className="cursor-pointer group block  rounded-md text-xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
             <span className="group-hover:[text-shadow:3px_3px_6px_var(--tw-shadow-color)] shadow-orange-500 hover:text-orange-500">Contact</span>
         </li>
          </Link>

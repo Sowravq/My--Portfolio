@@ -49,6 +49,11 @@ const Navbar = () => {
             <span className="group-hover:[text-shadow:3px_3px_6px_var(--tw-shadow-color)] shadow-orange-500 hover:text-orange-500">Education</span>
         </li>
          </Link>
+         <Link spy={true} to='Projects' smooth={true}>
+         <li className="cursor-pointer group block  rounded-md  text-white text-xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
+            <span className="group-hover:[text-shadow:3px_3px_6px_var(--tw-shadow-color)] shadow-orange-500 hover:text-orange-500">Projects</span>
+        </li>
+         </Link>
          
          <Link spy={true} to='Contact' smooth={true}>
          <li className="cursor-pointer group block  rounded-md  text-white text-xl font-bold shadow-2xl hover:scale-110 transition active:scale-90">
