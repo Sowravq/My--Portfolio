@@ -5,7 +5,7 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 import {useTypewriter,Cursor } from 'react-simple-typewriter'
  
 const Intro = () => {
-    const pdf = '../../../public/pdf/assignment12_category_0007.pdf'
+    const pdf = '/pdf/assignment12_category_0007.pdf'
        const [text] = useTypewriter({
         words:['Frontend Developer'],
         loop:{},
